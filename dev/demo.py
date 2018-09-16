@@ -54,7 +54,7 @@ class Piano:
     def initKeys(self, notes):
         keys = {}
         for note in notes:
-            soundPath = "sounds/Piano.ff." + note + ".wav"
+            soundPath = soundPath = "sounds/Piano.ff." + note + ".wav"
             rawSound = bytes(
                 list(bytearray(
                     pygame.mixer.Sound(soundPath).get_raw()
